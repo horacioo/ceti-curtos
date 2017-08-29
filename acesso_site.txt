@@ -1,0 +1,8 @@
+ceti2017
+
+
+Congratulations!
+Your installation is ready. You can access it now by going here. If there is any login information, it will have been sent to the email address you provided.
+Admin Area: http://ceticursos.com.br/wp-admin
+Username: horacio
+Password: k6F0rTrEnEL4zB

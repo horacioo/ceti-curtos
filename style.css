@@ -1,0 +1,155 @@
+/*
+Theme Name: Tema para o site Ceti cursos 
+Author: Horácio
+Author URI: http://planet1.com.br
+Description: Tema criado para o projeto ceti cursos
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+
+
+.alignleft{float:left;}
+.alignright{float:right;}
+.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+img{
+    margin: 5px;
+    border-radius: 5px;
+    border: 0px solid #dadada;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+h1,h2,h3{
+    text-transform: capitalize;
+}
+
+
+body{font-family: 'Open Sans', sans-serif;}
+
+.navbar-default {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.distancia{margin-top: 15px;}
+
+.resumo{
+    font-size: 11px;
+}
+
+
+
+
+.thumb{
+    border: 1px solid #dcd9d9;
+    border-radius: 6px;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+.thumb img{
+    width: 100%;
+    position: absolute;
+    margin: 0%;
+    border-radius: 0;
+}
+
+.btn{
+    color: #2662A0;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.thumb p{
+    position: absolute;
+    Z-INDEX: 2;
+    FONT-SIZE: 15PX;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    width: 100%;
+    bottom: -10px;
+    text-transform: capitalize;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+
+
+.widget{
+    background-color: #e8e8e8;
+    border-radius: 7px;
+    padding-bottom: 10px;
+    padding-top:10px; 
+}
+
+.widget h1, .widget h2, .widget h2{   
+    color: #2662A0;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 21px;
+}
+
+.widget ul{
+    margin: 0;
+    padding: 0;
+}
+.widget ul li{
+    border-bottom: 1px dotted #a7a7a7;
+    list-style: none;
+    font-size: 11px;
+    width: 40%;
+    float: left;
+    margin-right: 4px;
+    text-transform: capitalize;
+    margin:2px;
+}
+
+
+.lateral_home{
+    height: auto;
+    overflow: auto;
+    margin: 2px;
+    padding: 2px;
+}
+
+
+
+footer{
+    min-height: 300px;
+    height: auto;
+    overflow: auto;
+}
+
+
+
+.cor-base{
+    background-color: #2662a0!important;
+    border-color:#2662a0!important;
+    font-size: 12px!important;
+    height: auto;
+    overflow: auto;
+    color: white;
+}
+.cor-base a{
+    color: white!important;
+    text-transform: capitalize;    
+}
+.cor-base li{border-left: 1px solid white;}
+
+.centroHome{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
