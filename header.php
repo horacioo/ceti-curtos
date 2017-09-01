@@ -9,41 +9,39 @@
         <!--[if lt IE 9]>
         <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/html5.js"></script>
         <![endif]-->
-
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
         <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"  rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
         <?php wp_head(); ?>
         <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-        <!--<link href="<?php echo $url_tema; ?>/css/menu.css" rel="stylesheet" type="text/css">
-        <link href="<?php echo $url_tema; ?>/css/flip.css" rel="stylesheet" type="text/css">
-        <script src="<?php echo $url_tema; ?>/js/menu.js"></script>
-        <script src="<?php echo $url_tema; ?>/js/video.js"></script>-->
-
-
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+<!--<link href="<?php echo $url_tema; ?>/css/menu.css" rel="stylesheet" type="text/css">
+<link href="<?php echo $url_tema; ?>/css/flip.css" rel="stylesheet" type="text/css">
+<script src="<?php echo $url_tema; ?>/js/menu.js"></script>
+<script src="<?php echo $url_tema; ?>/js/video.js"></script>-->
     </head>
     <header class="p1_header"></header>
     <body <?php body_class(); ?>>
-        
-        
         <div class="container"> 
             <div class="row">
                 <div class="col-lg-12">
                     <div class="col-lg-2"> <?php Logotipo() ?></div>
-                    <div class="col-lg-7"> telefone</div>
-                    <div class="col-lg-3"><?php get_search_form(); ?></div>
+                    <div class="col-lg-7 "><?php dynamic_sidebar("centroTopo"); ?></div>
+                    <div class="col-lg-3">
+                        <form action="" method="GET"> 
+                            <div class="input-group">
+                                <input type="text" name="s" class="form-control" placeholder="Search" id="txtSearch"/>
+                                <div class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
                 </div>
             </div>
-            <!--
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="col-lg-3">widgets horizontais</div>
-                </div>
-            </div>-->
         </div>
-
         <div class="cor-base distancia">
             <div class="container"> 
                 <div class="row">

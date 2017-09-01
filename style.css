@@ -29,13 +29,11 @@ img{
 }
 
 
-
 h1,h2,h3{
     text-transform: capitalize;
 }
 
-
-body{font-family: 'Open Sans', sans-serif;}
+body{font-family: 'Open Sans', sans-serif!important;}
 
 .navbar-default {
     background-color: #ff0000;
@@ -128,10 +126,13 @@ body{font-family: 'Open Sans', sans-serif;}
 
 
 footer{
-    min-height: 300px;
+    min-height: 200px;
     height: auto;
     overflow: auto;
+    position: relative;
+    padding-top: 30px;
 }
+footer li{border: 0!important;}
 
 
 
@@ -153,3 +154,57 @@ footer{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.centrotopo{
+    color: #2662a0;
+    font-style: italic;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#txtSearch{
+    height:31px!important;
+}
+
+body{padding-top: 20px;}   
+
+.selo{
+    width: 21px;
+    border-radius: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.link .exibe{ 
+    border: 1px solid #e8e8e8;
+    position: relative;
+    height: 169px;
+    overflow: hidden;
+    border-radius: 7px;
+    color: #949494;
+}
+.link .exibe img{
+    position: absolute;
+    width: 103%!important;
+    margin: 0px;
+    height: auto;
+}
+.link > p{
+    padding: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 10px;
+    color: #00abff;
+}
+.link .exibe p{
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.74);
+    width: 100%;
+    text-align: center;
+    bottom: -11px;
+    padding: 6px;
+}
+
+.esquerdaH{clear: both;}

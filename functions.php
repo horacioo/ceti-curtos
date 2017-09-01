@@ -88,13 +88,23 @@ add_filter("mce_buttons", "enable_more_buttons");
 
 /* * ************************************************************** */
 /* * ************************************************************** */
+
+register_sidebar(array(
+    "name" => "esquerda_home",
+    "description" => "barra de conteudo que fica no rodape",
+    "id" => "EsquerdaH",
+    "before_widget" => "<div class='row'><div class='clear col-lg-12'>",
+    "after_widget" => "</div></div>",
+));
+
 register_sidebar(array(
     "name" => "lateralHome",
     "description" => "barra de lateralEsquerda",
     "id" => "lateral",
-    "before_widget" => "<div class='lateral_home'>",
+    "before_widget" => "<div class='clear col-lg-12 lateral_home'>",
     "after_widget" => "</div>",
 ));
+
 
 
 register_sidebar(array(
@@ -121,9 +131,18 @@ register_sidebar(array(
     "before_widget" => "<div class='col-sm-12 centroHome'>",
     "after_widget" => "</div>",
 ));
+
+register_sidebar(array(
+    "name" => "centroTopo",
+    "description" => "barra de conteudo que fica no cenro do topo",
+    "id" => "centroTopo",
+    "before_widget" => "<div class='col-sm-4 centrotopo'>",
+    "after_widget" => "</div>",
+));
 /* * ************************************************************** */
 /* * ************************************************************** */
 
+require "metaboxes/metaBoxe.php";
 require "shortcode/shortcode.php";
 
 
